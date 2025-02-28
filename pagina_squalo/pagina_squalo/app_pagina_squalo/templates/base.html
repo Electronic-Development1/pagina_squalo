@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS (necesario para el carrusel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">   
+
+    
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden; /* Evita que el body tenga barra de desplazamiento */
+            background-color: white;
+        }
+        .navbar {
+            width: 100%;
+            background: linear-gradient(135deg, #2E7D32, #1B5E20);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover {
+            color: #A5D6A7;
+        }
+        .content {
+            margin-top: 80px; /* Espacio para la navbar */
+            margin-bottom: 60px; /* Espacio para el footer */
+            padding: 20px;
+            overflow-y: scroll; /* Barra de desplazamiento vertical en el contenido */
+            height: calc(100vh - 140px); /* Altura disponible entre navbar y footer */
+        }
+        .footer {
+            width: 100%;
+            background: linear-gradient(135deg, #2E7D32, #1B5E20);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            font-weight: 500;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">SQUALO</div>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/sobre_nosotros/">Sobre Nosotros</a></li>
+            <li><a href="/proyectos/">Proyectos</a></li>
+            <li><a href="/noticias/">Noticias</a></li>
+            <li><a href="/galeria/">Galería</a></li>
+            <li><a href="/unete/">Únete al semillero</a></li>
+            <li><a href="/patrocinios/">Patrocinios</a></li>
+            <li><a href="/formulario/">Registro Usuarios</a></li>
+            <li><a href="/contactanos/">Contáctanos</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <!-- Contenido desplazable -->
+       
+
+        {% block content %}
+
+        {% endblock %}
+
+       
+    </div>
+    <div class="footer">
+        Semillero Squalo 2025
+    </div>
+</body>
+</html>

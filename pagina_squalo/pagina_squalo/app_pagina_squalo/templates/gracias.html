@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias por Registrarte</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: rgba(0, 255, 89, 0.351);
+        }
+        .navbar {
+            width: 100%;
+            background: linear-gradient(135deg, #2E7D32, #1B5E20);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover {
+            color: #A5D6A7;
+        }
+        .content {
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .container {
+            display: flex;
+            width: 800px;
+            height: 450px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            overflow: hidden;
+            background: #FFFFFF;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        h1 {
+            color: #1E1E2F;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #1E1E2F;
+        }
+        .footer {
+            background: linear-gradient(135deg, #2E7D32, #1B5E20);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">SQUALO</div>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/sobre_nosotros/">Sobre Nosotros</a></li>
+            <li><a href="/proyectos/">Proyectos</a></li>
+            <li><a href="/noticias/">Noticias</a></li>
+            <li><a href="/galeria/">Galería</a></li>
+            <li><a href="/unete/">Únete al semillero</a></li>
+            <li><a href="/patrocinios/">Patrocinios</a></li>
+            <li><a href="/formulario/">Registro Usuarios</a></li>
+            <li><a href="/contactanos/">Contáctanos</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="container">
+            <h1>Gracias por contar con nosotros. <br> Equipo SQUALO</h1>
+            <p>Tu registro ha sido exitoso. ¡Estamos emocionados de tenerte con nosotros!</p>
+        </div>
+    </div>
+    <div class="footer">
+        Semillero Squalo 2025
+    </div>
+</body>
+</html>

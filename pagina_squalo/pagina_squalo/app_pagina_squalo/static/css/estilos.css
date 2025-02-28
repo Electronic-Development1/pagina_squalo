@@ -1,0 +1,9 @@
+.carousel-container {
+    width: 100%; /* Ajusta el tamaño total del carrusel */
+    margin: auto; /* Centrarlo en la página */
+}
+
+.carousel-img {
+    height: 400px; /* Altura fija para reducir el tamaño */
+    object-fit: cover; /* Evita que las imágenes se distorsionen */
+}
